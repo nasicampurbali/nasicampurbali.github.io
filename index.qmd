@@ -1,0 +1,84 @@
+---
+title: "Melihat hubungan ekspor dan nilai tukar"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "I Made Krisna"
+date: 2022-08-10
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+This just a showcase of what quarto docs can produce. I use this part for my students.
+
+## Pendahuluan
+
+### Latas belakang tugas
+
+Tugas ini diberikan sebagai syarat kelulusan metopel. Mahasiswa ditugaskan memilih tema penelitian, mencari data, membuat visualisasi, dan melakukan analisis regresi. Mahasiswa juga diharuskan melakukan diskusi, menarik kesimpulan, dan menyampaikan kewaspadaan dari kesimpulan yang dapat ditarik dari metode analisis yang dipilih.
+
+### Latar belakang masalah
+
+alasan memilih masalah ini (kenapa masalah ini menarik dan penting)
+
+### Pertanyaan
+
+Laporan ini bermaksud untuk menjawab pertanyaan sebagai berikut:
+
+1.  wkwkw
+2.  wkwkkw
+3.  wkwkwkwkkw
+
+### Package
+
+packages yang digunakan antara lain sebagai berikut:
+
+```{r}
+#| warning: false
+library(tidyverse)
+```
+
+## Data dan visualisasi
+
+![logo APP muncul secara random](poltekapp.jpg)
+
+```{r}
+#| label: fig-mpg
+#| fig-cap: "City and highway mileage for 38 popular models of cars.Color by number of cylinders"
+ggplot(mpg, aes(x = hwy, y = cty, color = cyl)) +
+  geom_point(alpha = 0.5, size = 2) +
+  scale_color_viridis_c() +
+  theme_minimal()
+```
+
+## Analisis
+
+Metode yang dipilih adalah regresi Autoregression dengan spesifikasi AR(1) sebagai berikut:
+
+$$
+y_{t}=\beta_0 + \beta_1 y_{t-1}+\mu_t
+$$
+
+Hasil regresinya adalah
+
+```{r}
+reg<-lm(hwy~cty,data=mpg)
+summary(reg)
+```
+
+Dapat dilihat dari tabel di atas bahwa ini bukan regresi AR(1). wkkwkwkwk.
+
+## Kesimpulan
+
+Kesimpulannya, materinya belum selesai dibuat makanya bikin asal-asal dulu awokawokawok.
+
+## Referensi
+
+Gupta, K., Choirinnida, I. T., & Taufik, M. (2022). Global value chain impact for Indonesia economy and the way to make it more resilient. In Indonesia Post-Pandemic Outlook: Rethinking Health and Economics Post-COVID-19. BRIN Publishing.
+
+Media, K. C. (2022, December 24). Ekspor Bauksit Distop, Pembangunan 12 Smelter Ditarget Rampung Juni 2023. KOMPAS.com. https://money.kompas.com/read/2022/12/24/110000926/ekspor-bauksit-distop-pembangunan-12-smelter-ditarget-rampung-juni-2023
+
+Sjahrir, B. S., Kis-Katos, K., & Schulze, G. G. (2014). Administrative Overspending in Indonesian Districts: The Role of Local Politics. World Development, 59, 166–183. https://doi.org/10.1016/j.worlddev.2014.01.008
+
+Referensi ini dibuat dengan Zotero.
