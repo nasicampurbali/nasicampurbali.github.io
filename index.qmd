@@ -10,14 +10,13 @@ format:
 editor: visual
 ---
 
-This just a showcase of what quarto docs can produce. I use this part for my students.
+This **just** a ~~showcase~~ of what *Quarto* docs can produce. I use this part for my students.
 
 ## Pendahuluan
 
 ### Latar belakang
 
-Latar belakang berisi tentang pentingnya topik yang diangkat dalam laporan. Uraikan alasan mengapa penulis tertarik menentukan topik yang dijadikan pembahasan, dapat menggunakan metode identifikasi masalah (fishbone diagram, root cause problem solving, dll). Kemukakan hal–hal yang mendorong atau argumentasi pentingnya penyelesaian permasalahan tersebut, termasuk jika ada hasil penelitian terkait yang telah dilakukan terdahulu.  
-
+Latar belakang berisi tentang pentingnya topik yang diangkat dalam laporan. Uraikan alasan mengapa penulis tertarik menentukan topik yang dijadikan pembahasan, dapat menggunakan metode identifikasi masalah (fishbone diagram, root cause problem solving, dll). Kemukakan hal--hal yang mendorong atau argumentasi pentingnya penyelesaian permasalahan tersebut, termasuk jika ada hasil penelitian terkait yang telah dilakukan terdahulu.
 
 ### Ruang lingkup
 
@@ -45,18 +44,34 @@ library(WDI) # tambahkan library lain jika diperlukan
 
 ## Studi pustaka
 
-Salah satu bagian yang penting dalam penelitian adalah melakukan studi literatur, yaitu membaca dari berbagai sumber sesuai dengan topik yang diteliti untuk menghasilkan ide/analisis baru yang dipresentasikan dalam sebuah karya ilmiah. 
+Salah satu bagian yang penting dalam penelitian adalah melakukan studi literatur, yaitu membaca dari berbagai sumber sesuai dengan topik yang diteliti untuk menghasilkan ide/analisis baru yang dipresentasikan dalam sebuah karya ilmiah.
 
-Bab ini menguraikan dasar-dasar teori dan istilah yang berhubungan dengan permasalahan yang ditemui atau yang mendasari pemilihan topik laporan. Studi Pustaka dilengkapi dengan sumber referensi yang dipakai dan bukan berdasarkan asumsi penulis. 
-
+Bab ini menguraikan dasar-dasar teori dan istilah yang berhubungan dengan permasalahan yang ditemui atau yang mendasari pemilihan topik laporan. Studi Pustaka dilengkapi dengan sumber referensi yang dipakai dan bukan berdasarkan asumsi penulis.
 
 ## Metode penelitian
 
 ### Data
 
-![logo APP muncul secara random](poltekapp.jpg)
+| negara   | ekspor    |
+|----------|-----------|
+| cina     | 20.000USD |
+| thailand | 21.000USD |
+| vietnam  | 10.000USD |
+
+: lalala ekspor asal-asalan
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+|      |      |      |
+
+: wleowleo wleo
+
+![logo APP muncul secara random lalalala](poltekapp.jpg)
 
 penelitian ini menggunakan data xxx
+
 
 ```{r}
 #| label: fig-mpg
@@ -73,8 +88,7 @@ Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) de
 
 $$
 y_{t}=\beta_0 + \beta_1 x_t+\mu_t
-$$
-di mana $y_t$ adalah hwy dan $x_t$ adalah cty.
+$$ di mana $y_t$ adalah hwy dan $x_t$ adalah cty.
 
 ## Pembahasan
 
